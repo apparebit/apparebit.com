@@ -1,4 +1,4 @@
-/* © 2020-2024 Robert Grimm */
+/* © 2020-2025 Robert Grimm */
 
 export default function Footer(file, context) {
   const me = file.coolPath === '' ? 'me ' : '';
@@ -25,7 +25,7 @@ export default function Footer(file, context) {
 </ul>
 </div>
 
-<p class=copyright>© 2011–2024
+<p class=copyright>© 2011–2025
 <a rel="${me}author" href="mailto:apparebit@gmail.com">Robert Grimm</a>.
 All rights reserved.</p>
 </footer>`;
