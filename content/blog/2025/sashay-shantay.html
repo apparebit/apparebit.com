@@ -236,12 +236,20 @@ inspections to determine how far the tool got and what went wrong. For the quick
 check variety, <span class=shantay>shantay</span> keeps updating a status line
 on the console. For longer lasting tasks, such as downloading a release archive,
 it includes a progress bar on the status line. It even computes the download
-speed and includes it next to the progress bar. For the more thorough inspection
-variety, <em>shantay</em> keeps a persistent log on disk. The log format
-represents a compromise: It is structured and regular enough to be easily parsed
-by software, but also unstructured enough to still be human-readable. For
-example, with <kbd>‑v</kbd> for verbose mode, <em>shantay</em>
-logged:</p>
+speed and includes it next to the progress bar. Here it is busy converting from
+<abbr>CSV</abbr> to parquet:</p>
+
+<figure class=figure role=group>
+<img src="/blog/2025/dsa-sor-db/progress.png" alt="Screenshot of shantay's
+status line with progress bar in a nice calm blue">
+<figcaption>Visualizing progress</figcaption>
+</figure>
+
+<p>For the more thorough inspection variety, <em>shantay</em> keeps a persistent
+log on disk. The log format represents a compromise: It is structured and
+regular enough to be easily parsed by software, but also unstructured enough to
+still be human-readable. For example, with <kbd>‑v</kbd> for verbose mode,
+<em>shantay</em> logged:</p>
 
 <pre><code>
 2025-02-28 06:23:44 [DEBUG] extracted rows=709, using="Pola.rs with glob", file="sor-global-2025-01-31-full-00056.csv.zip"
@@ -426,7 +434,7 @@ matters, but still is not granular enough.</p>
 
 
 <section aria-labelledby=sashay>
-<h2 id=sashay>Sashay Away!</h2>
+<h2 id=sashay>Sashay Away?</h2>
 
 <p>Me and <span class=shantay>shantay</span> will be mining the data for more
 insight for sure. Hopefully, we can work around some of the limitations with
@@ -435,7 +443,7 @@ I’m going to continue improving <em>shantay</em>. In fact, I just made <a
 href="https://pypi.org/project/shantay/">the first release</a>. Its support for
 extracting categories other than protection of minors is still very raw and
 shaky. But with data retention expiring towards the end of the month, releasing
-early seemed called for.</p>
+early seemed the right approach.</p>
 
 <p>Meanwhile the <abbr>EU</abbr> would be well-advised to up its transparency
 game. Unfortunately, the current effort reeks of transparency theater, producing
