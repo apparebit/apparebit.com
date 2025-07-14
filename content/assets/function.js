@@ -1,11 +1,7 @@
 /* (C) Copyright 2019-2025 Robert Grimm
    Licensed under the MIT License (https://opensource.org/licenses/MIT) */
 
-const DEBUG = Boolean(
-  document.documentElement.classList.contains('debug')
-  || document.body.classList.contains('debug')
-);
-if (DEBUG) console.log(`☑️ Preparing dynamic page enhancements.`);
+let DEBUG = false;
 
 // -----------------------------------------------------------------------------
 
@@ -122,6 +118,12 @@ function updateThemeColor() {
 // -----------------------------------------------------------------------------
 
 function setup() {
+  // Access the document only after the DOM has been loaded.
+  DEBUG = Boolean(
+    document.documentElement.classList.contains('debug')
+    || document.body.classList.contains('debug')
+  );
+
   if (DEBUG) {
     console.log(`☑️ Configuring dynamic page enhancements after content loaded.`);
   }
