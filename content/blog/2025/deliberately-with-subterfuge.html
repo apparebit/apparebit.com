@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Deliberately, With Subterfuge • Apparebit</title>
+<link rel="preload" href="/assets/fonts/bely-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/reforma-2018-gris.woff2" as="font" type="font/woff2" crossorigin>
+<script async type="module" src="/assets/function.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<link rel="stylesheet" href="/assets/form.css">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/a-circle-32x32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/icons/a-circle-512x512.png">
+<link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/assets/icons/a-circle-192x192.png">
+<link rel="manifest" href="/assets/apparebit.webmanifest">
+<link rel="icon" type="image/svg+xml" sizes="any" href="/assets/icons/a-circle.svg">
+<meta property="og:title" content="Deliberately, With Subterfuge">
+<meta name="description" content="How to create a portrait to remember a friend by">
+<meta property="og:description" content="How to create a portrait to remember a friend by">
+<link rel="canonical" href="https://apparebit.com/blog/2025/deliberately-with-subterfuge">
+<link rel="alternate" type="application/rss+xml" href="https://apparebit.com/feed.rss">
+<meta property="og:url" content="https://apparebit.com/blog/2025/deliberately-with-subterfuge">
+<meta property="og:image" content="https://apparebit.com/blog/2025/michael/yawning-1200x630.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt"
+      content="a black and white portrait of a man in his late thirties in a loose fitting
+               black t-shirt cradling his head in his hands and yawning, mouth wide open">
+<meta name="author" content="Robert Grimm">
+<meta property="article:author" content="https://facebook.com/apparebit">
+<meta property="fb:app_id" content="301854043178629">
+<meta property="og:site_name" content="Apparebit">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@apparebit">
+<meta name="twitter:creator" content="@apparebit">
+<meta name="theme-color" content="#1d1d20" data-fallback="#e5e6e8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://apparebit.com/blog/2025/deliberately-with-subterfuge"
+  },
+  "headline": "Deliberately, With Subterfuge",
+  "image": [
+    "https://apparebit.com/blog/2025/michael/yawning-1200x630.jpg"
+  ],
+  "datePublished": "2025-07-14T12:00:00-05:00",
+  "author": {
+    "@type": "Person",
+    "name": "Robert Grimm",
+    "url": "https://apparebit.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Robert Grimm",
+    "url": "https://apparebit.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://apparebit.com/assets/icons/a-circle.svg"
+    }
+  },
+  "description": "How to create a portrait to remember a friend by"
+}
+</script>
+<style>
+:root {
+  --color-accent: var(--color-black);
+}
+.page-header, .title {
+  transition: opacity 0.3s ease-out
+}
+.page-header, .title {
+  --color-bg: var(--color-black);
+  --color-fg: var(--color-white);
+}
+.cover img {
+  object-position: 56% 0%;
+}
+.cover .title {
+  margin: 2vmin;
+}
+
+.cover .title h1 {
+  margin-top: auto;
+  font-size: calc(1em + 4vmin);
+  text-align: center;
+  margin-right: var(--t30); /* to make up for box shadow */
+  line-height: calc(var(--r-major) * var(--r-minor));
+}
+/*
+ * Spans nested in spans: The outer spans provide the background color
+ * and box shadow (Safari has problems with padding). The inner spans
+ * are for line-breaking in a controlled fashion.
+ */
+
+.title h1 > span {
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  padding: var(--t70) 0 var(--t50);
+  box-shadow: var(--t30) 0 0 0 var(--color-bg),
+    calc(-1 * var(--t30)) 0 0 0 var(--color-bg);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.title h1 > span > span {
+  display: inline-block;
+}
+
+@media (forced-colors: active) {
+  nav a {
+    background-color: Canvas;
+  }
+  .cover .title {
+    color: CanvasText;
+    background-color: Canvas;
+  }
+}
+/*
+ * Only if the device's primary input device supports hovering,
+ * hide navigation bar and title unless pointer is on document.
+ */
+@media (hover: hover) {
+  body .page-header, body .title { opacity: 0; }
+  body:hover .page-header, body:hover .title { opacity: 1; }
+}
+</style>
+</head>
+<body class=bruutal>
+
+<nav class="page-header cornered">
+<ul role=list>
+<li><a rel=home href="/">
+<svg aria-hidden="true" width="30" height="30" viewBox="0 0 100 100"><path d="M88.1 93.6V41.8c0-27-12.5-40.5-36-40.5C33.4 1.3 19.5 8.9 6.8 23l1 1A31 31 0 0128.2 17c14.2 0 22.4 10.3 22.4 30.8-31 3.4-49.3 14.8-49.3 32 0 11.8 8.2 18.7 20.4 18.7 10.2 0 20.2-5 29-12.5v10.6h46.7v-3H88zM46.4 84c-7.4 0-11.2-4.7-11.2-13.4 0-10 4.3-17 15.5-20.2v33c-1.6.4-3.1.6-4.3.6z"/></svg>
+<span class=invisible>Home</span>
+</a></li>
+<li><a href="/blog">Blog</a></li>
+</ul>
+</nav>
+
+<main class=h-entry>
+<article class="e-content">
+<header class=cover>
+<div class=title>
+<h1 class=p-name><span><span>Deliberately,</span> <span>With Subterfuge</span></span></h1>
+</div>
+<picture>
+<source
+  srcset="/blog/2025/michael/yawning-450x338.webp 450w,
+          /blog/2025/michael/yawning-600x451.webp 600w,
+          /blog/2025/michael/yawning-900x676.webp 900w,
+          /blog/2025/michael/yawning-1000x751.webp 1000w,
+          /blog/2025/michael/yawning-1200x902.webp 1200w,
+          /blog/2025/michael/yawning-1600x1202.webp 1600w,
+          /blog/2025/michael/yawning-2000x1503.webp 2000w,
+          /blog/2025/michael/yawning-2400x1804.webp 2400w,
+          /blog/2025/michael/yawning-2606x1959.webp 2606w"
+  sizes="100vw"
+  type="image/webp">
+<img
+  srcset="/blog/2025/michael/yawning-450x338.jpg 450w,
+          /blog/2025/michael/yawning-600x451.jpg 600w,
+          /blog/2025/michael/yawning-900x676.jpg 900w,
+          /blog/2025/michael/yawning-1000x751.jpg 1000w,
+          /blog/2025/michael/yawning-1200x902.jpg 1200w,
+          /blog/2025/michael/yawning-1600x1202.jpg 1600w,
+          /blog/2025/michael/yawning-2000x1503.jpg 2000w,
+          /blog/2025/michael/yawning-2400x1804.jpg 2400w,
+          /blog/2025/michael/yawning-2606x1959.jpg 2606w"
+      sizes="100vw"
+      width="2606" height="1959"
+      src="/blog/2025/michael/yawning-2606x1959.jpg"
+      alt="a black and white portrait of a man in his late thirties in a loose fitting
+           black t-shirt cradling his head in his hands and yawning, mouth wide open">
+</picture>
+<div class=byline>
+  <address>
+    <a class="p-author h-card" rel=author href=https://apparebit.com>Robert Grimm</a>
+  </address>
+  <time class=dt-published datetime=2025-07-14>July 14, 2025</time>
+</div>
+</header>
+
+<section aria-labelledby=introduction>
+<h2 id=introduction hidden>Introduction</h2>
+
+<p>How to take pictures of a friend?</p>
+
+<p>That are true to the friend?</p>
+
+<p>When the friend is an actor?</p>
+
+<p>When the friend also likes to put on a show off-stage?</p>
+
+<p>When the friend is dying?</p>
+
+<p>Your friend has agreed to be photographed. This is your one chance to create
+a portrait to remember him by. But you just know that he’ll put on a show for
+the camera, making it hard, if not impossible, to take meaningful pictures.</p>
+
+<p>So, how do you go about photographing said friend?</p>
+
+<p>For my photo shoot with Michael in July 1993, my answer to the question was
+<em>deliberately, with subterfuge</em>.</p>
+
+<figure class=wide-figure>
+<picture>
+<source
+  srcset="/blog/2025/michael/peeking-450x360.webp 450w,
+          /blog/2025/michael/peeking-600x481.webp 600w,
+          /blog/2025/michael/peeking-900x721.webp 900w,
+          /blog/2025/michael/peeking-1000x802.webp 1000w,
+          /blog/2025/michael/peeking-1200x962.webp 1200w,
+          /blog/2025/michael/peeking-1600x1283.webp 1600w,
+          /blog/2025/michael/peeking-2000x1604.webp 2000w,
+          /blog/2025/michael/peeking-2445x1961.webp 2445w"
+  sizes="(max-width: 59.18em) 100vw, 59.18em"
+  type="image/webp">
+<img
+  srcset="/blog/2025/michael/peeking-450x360.jpg 450w,
+          /blog/2025/michael/peeking-600x481.jpg 600w,
+          /blog/2025/michael/peeking-900x721.jpg 900w,
+          /blog/2025/michael/peeking-1000x802.jpg 1000w,
+          /blog/2025/michael/peeking-1200x962.jpg 1200w,
+          /blog/2025/michael/peeking-1600x1283.jpg 1600w,
+          /blog/2025/michael/peeking-2000x1604.jpg 2000w,
+          /blog/2025/michael/peeking-2445x1961.jpg 2445w"
+  sizes="(max-width: 59.18em) 100vw, 59.18em"
+  width="2445" height="1961"
+  src="/blog/2025/michael/peeking-2445x1961.jpg"
+  alt="a black and white portrait of a man in his late thirties in a loose fitting
+       black t-shirt cradling his head in his hands, one eye closed, the other
+       peeking at us">
+</picture>
+</figure>
+</section>
+
+
+<section aria-labelledby=fast-friends>
+<h2 id=fast-friends>Fast Friends and 120 Film</h2>
+
+<p>Michael and I had met in Munich three years earlier, when I was living there
+as well. We originally got together for sex, with him helping me explore a
+budding interest in <abbr>BDSM</abbr>. Michael had been upfront about his
+<abbr>HIV</abbr> status and was careful to avoid any risk of exposure. He also
+was really good at balancing a calm gentleness with determined intensity. That
+made it easy for me to trust him during some wild play. It also provided the
+basis for us becoming fast friends.</p>
+
+<p>Alas, when it wasn’t just us, when there was an audience, Michael was liable
+to put on a show. That’s how we got kicked out of the Ochsengarten, Munich’s
+first gay leather bar (which opened in 1967, two years before the Stonewall
+Riots in New York). When, one rainy evening, the crowd seemed unacceptably smug
+to Michael, he opened his umbrella right there in the middle of the bar and
+refused to close it again. Thanks to the immediate intervention by staff,
+Michael’s harmless provocation was over all too quickly. It also was exceedingly
+successful, with patrons yelling in anger and staff threatening us with police
+lest we get out, now! Just maybe, the crowd <em>was</em> a bit too smug.
+Michael’s instigation of this beautiful farce makes me smile to this day. It
+also helped take my banishment from the bar in stride.</p>
+
+<p>At the time, we didn’t routinely carry high-resolution cameras in our pants
+pockets. Hence, I couldn’t snap a picture of Michael’s mischievous grin as we
+were leaving the bar that night. In fact, we didn’t have digital cameras at all.
+Apple’s QuickTake 100, one of the first digital cameras aimed at consumers,
+would be introduced only a year after our photo shoot, in 1994. It also cost
+$749 and took pictures with at most 640 by 480 pixels resolution. Instead, that
+summer, I was shooting portraits of close friends with my Mamiya
+<abbr>RZ67</abbr> medium format film camera.</p>
+
+<p>Besides its high-quality construction, the defining feature of the Mamiya
+<abbr>RZ67</abbr> is its modular design. Lens, view finder, and film cartridge
+individually attach to the box housing the mirror mechanism. Fully assembled,
+the camera is rather bulky—10cm by 13cm by 21cm or 4″ by 5″ by 8″—and also quite
+heavy—2.5kg or 5.5lb. Hence, it helps to use it with a tripod and wire release.
+At the same time, all that heft does not include sophisticated electronics.
+Focus and exposure are entirely manual, making a light meter a must-have
+accessory.</p>
+
+<p>The primary benefit of all this picture taking machinery is fantastic detail,
+with photos shot on so-called 120 film having over four times the size and
+therefore resolution of 35mm film. While analog film and digital sensors are not
+directly comparable and much depends on lens and film stock, 120 film offera
+more detail than most digital sensors even today. Beyond resolution, image size
+also impacts focus. Covering a larger area fundamentally requires a lens with a
+larger focal length. As a result, the Mamiya’s 110m lens captures the same view
+as a 50mm lens for 35mm film or a 9mm lens for a cell phone. However, since
+depth of field shrinks with growing focal length, medium format cameras favor
+images with limited focus and plenty of bokeh.</p>
+
+<figure class=wide-figure>
+<picture>
+<source
+  srcset="/blog/2025/michael/looking-450x360.webp 450w,
+          /blog/2025/michael/looking-600x481.webp 600w,
+          /blog/2025/michael/looking-900x721.webp 900w,
+          /blog/2025/michael/looking-1000x801.webp 1000w,
+          /blog/2025/michael/looking-1200x962.webp 1200w,
+          /blog/2025/michael/looking-1600x1282.webp 1600w,
+          /blog/2025/michael/looking-2000x1603.webp 2000w,
+          /blog/2025/michael/looking-2452x1966.webp 2452w"
+  sizes="(max-width: 59.18em) 100vw, 59.18em"
+  type="image/webp">
+<img
+  srcset="/blog/2025/michael/looking-450x360.jpg 450w,
+          /blog/2025/michael/looking-600x481.jpg 600w,
+          /blog/2025/michael/looking-900x721.jpg 900w,
+          /blog/2025/michael/looking-1000x801.jpg 1000w,
+          /blog/2025/michael/looking-1200x962.jpg 1200w,
+          /blog/2025/michael/looking-1600x1282.jpg 1600w,
+          /blog/2025/michael/looking-2000x1603.jpg 2000w,
+          /blog/2025/michael/looking-2452x1966.jpg 2452w"
+  sizes="(max-width: 59.18em) 100vw, 59.18em"
+  width="2452" height="1966"
+  src="/blog/2025/michael/looking-2452x1966.jpg"
+  alt="a black and white portrait of a man in his late thirties in a loose fitting
+       black t-shirt resting both arms on (presumably) a table and looking directly at us">
+</picture>
+</figure>
+</section>
+
+
+<section aria-labelledby=it-was-over>
+<h2 id=it-was-over>It Was Over Before It Began</h2>
+
+<p>Setting up the Mamiya <abbr>RZ67</abbr> on location requires going through a
+number of steps. Start by cleaning camera body and lens. Insert film into
+cartridges, plural, because each roll of film has only ten or so exposures.
+Erect the tripod. Assemble and attach the camera. Connect the cable release.
+Measure the subject with the light meter. Configure focus and exposure on the
+camera. Then, and only then, are you ready to actually take a picture.</p>
+
+<p>Such elaborate ritual to set up a big black box on a tripod makes it
+impossible for anyone to ignore the camera. But I didn’t really need Michael to
+ignore the camera. I needed him to believe that I wasn’t taking pictures. That
+it was just us in the room. And for that, the elaborate ritual provided the
+perfect cover. So, I prepared as much as possible before heading to Michael’s
+place. The camera was cleaned and assembled. All cartridges were loaded with
+black and white film. Set up would be fast and easy.</p>
+
+<p>As luck would have it, when I showed up at Michael’s place at the agreed-upon
+time late in the morning, his partner opened the door. Michael had overslept and
+was still in bed. I set up in the living room, placing a chair against the same
+multifunction wall I had been cuffed to a few years back.</p>
+
+<p>Michael joined me soon enough, but obviously was still waking up. I
+encouraged him to make himself comfortable in the chair and warned him that I
+might take a little longer to finish setting up. In reality, all that was left
+was setting focus and exposure. Just as that was taken care of, Michael yawned.
+I took the first picture. He curiously peeked at me. I took another picture. I
+asked him to hold still for a moment, so that I could adjust focus. He did,
+looking straight into the camera. I took another picture. And so on.</p>
+
+<p>When I announced that I was finally ready to take pictures, I had already
+shot a roll of film. Michael perked up and started putting on a show. Because of
+that, most of the pictures I took thereafter are forgettable. The good ones,
+with exception of the picture of Michael and his partner, were all on that first
+roll of film.</p>
+
+<p>I have no memory of whether I shared prints with Michael, even though I do
+remember using a photo lab in Munich that summer.</p>
+
+<p>But I vividly remember two more encounters with Michael that summer.</p>
+
+<figure class=wide-figure>
+<picture>
+<source
+  srcset="/blog/2025/michael/partnered-450x365.webp 450w,
+          /blog/2025/michael/partnered-600x487.webp 600w,
+          /blog/2025/michael/partnered-900x731.webp 900w,
+          /blog/2025/michael/partnered-1000x812.webp 1000w,
+          /blog/2025/michael/partnered-1200x975.webp 1200w,
+          /blog/2025/michael/partnered-1600x1300.webp 1600w,
+          /blog/2025/michael/partnered-2000x1625.webp 2000w,
+          /blog/2025/michael/partnered-2395x1947.webp 2395w"
+  sizes="(max-width: 59.18em) 100vw, 59.18em"
+  type="image/webp">
+<img
+  srcset="/blog/2025/michael/partnered-450x365.jpg 450w,
+          /blog/2025/michael/partnered-600x487.jpg 600w,
+          /blog/2025/michael/partnered-900x731.jpg 900w,
+          /blog/2025/michael/partnered-1000x812.jpg 1000w,
+          /blog/2025/michael/partnered-1200x975.jpg 1200w,
+          /blog/2025/michael/partnered-1600x1300.jpg 1600w,
+          /blog/2025/michael/partnered-2000x1625.jpg 2000w,
+          /blog/2025/michael/partnered-2395x1947.jpg 2395w"
+  sizes="(max-width: 59.18em) 100vw, 59.18em"
+  width="2395" height="1947"
+  src="/blog/2025/michael/partnered-2395x1947.jpg"
+  alt="a black and white portrait of two men in their late thirties, sitting next
+       to each other back to back, with one man looking at us and the other staring
+       off into the distance">
+</picture>
+</figure>
+</section>
+
+
+<section aria-labelledby=that-weekend>
+<h2 id=one-last-weekend>That Weekend in Berlin</h2>
+
+<p>On a Thursday or Friday evening a few weeks later, I was meeting a friend at
+the Anderes Ufer, a gay café in Berlin. When I checked out a sudden commotion at
+the door, I immediately recognized the cause: Michael had fallen from the
+backseat of a taxi onto the curb. While helping him up again, he instructed me
+to pay for his ride. That explained why the driver seemed more than a little
+irritated. But otherwise, Michael assured me, he was all set. Sure enough, when
+I went looking for him before heading out, he had found his hosts for the
+weekend and was happily nursing a drink.</p>
+
+<p>Saturday night, I was hanging out at the Scheune, a gay bar. I was about to
+head to the downstairs playroom, when Michael emerged from there, his face
+positively glowing in bliss. We talked for a bit, but he was eager to venture
+downstairs again, to find more of whatever caused that glorious bliss.</p>
+
+<p>That was the last time I saw Michael.</p>
+
+<p>As his partner told me months later, Michael returned to Munich on Monday. He
+was dead before the week was over, two months before his 40<sup>th</sup>
+birthday.</p>
+
+<hr>
+
+<p>Over the years, the portrait of a yawning Michael, enlarged to 1.2m by 1m and
+framed, hung on the walls of several frathouse rooms, three subsequent
+apartments, and my office at <abbr>NYU</abbr>. When students inquired about the
+photograph, I just told them that it depicted “a friend.” Alas, as you just
+found out, the full story is quite a bit more involved.</p>
+
+<p>Thank you, Michael!</p>
+
+</section>
+</article>
+</main>
