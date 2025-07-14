@@ -270,6 +270,7 @@ iframe {
   --color-bg-lifted: #fff;
   --color-bg-sunk: #eaeaec;
   --color-separator: #cdced0;
+  --color-active-link: #a0a1a3;
 
   --color-accent1: var(--color-cyan);
   --color-accent2: var(--color-green);
@@ -290,6 +291,7 @@ iframe {
     --color-bg-lifted: #38383d;
     --color-bg: #222225;
     --color-bg-sunk: #101012;
+    --color-active-link: #808183;
 
     --color-accent1: #753f86;
     --color-accent2: #962d56;
@@ -728,6 +730,14 @@ td {
 }
 
 /* ========================================================================== *
+ * View Transitions
+ * ========================================================================== */
+
+@view-transition {
+  navigation: auto;
+}
+
+ /* ========================================================================== *
  * COMPONENTS COMPONENTS COMPONENTS COMPONENTS COMPONENTS COMPONENTS COMPONENTS
  * COMPONENTS COMPONENTS COMPONENTS COMPONENTS COMPONENTS COMPONENTS COMPONENTS
  * COMPONENTS COMPONENTS COMPONENTS COMPONENTS COMPONENTS COMPONENTS COMPONENTS
@@ -773,7 +783,7 @@ a:not(.stylish):focus, a:not(.stylish):hover {
 }
 
 a:not(.stylish):active {
-  color: var(--color-fg);
+  color: var(--color-active-link);
   fill: currentColor;
   background-color: var(--color-fg);
 }
@@ -1394,6 +1404,10 @@ main .wide-figure-with-margin {
   }
 }
 
+header + .section > figure:only-child {
+  margin-bottom: var(--s05);
+}
+
 /*
 
 A textual figure needn't be a thesis,
@@ -1706,6 +1720,23 @@ hr.lively::after {
 /* Using italics for Adonai looks awkward. Besides, They surpass all emphasis. */
 i[lang=he] {
   font-style: normal
+}
+
+/* -------------------------------------------------------------------------- *
+ * input
+ * -------------------------------------------------------------------------- */
+
+input[type="color" i] {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-separator);
+}
+
+@supports (-moz-appearance: none) {
+  input[type="color" i] {
+    inline-size: var(--s20);
+    block-size: var(--s10);
+  }
 }
 
 /* -------------------------------------------------------------------------- *
