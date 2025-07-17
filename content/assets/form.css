@@ -1289,7 +1289,8 @@ var.env {
 
 .cover img, .cover .hero {
   width: 100vw;
-   /* The dynamic version */
+  /* Fallback fixes Safari not extending cover image to entire view. */
+  height: 100vh;
   height: 100svh;
 }
 
