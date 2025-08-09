@@ -84,7 +84,7 @@ function updateThemeColor() {
   }
 
   // Extract element whose visibility will control theme color.
-  let header = document.querySelector('.cover img');
+  let header = document.querySelector('header img');
   if (!header) header = document.querySelector('.page-header');
   if (!header) {
     if (DEBUG) console.error(`❌ No header element to control theme color switching!`);

@@ -158,6 +158,16 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'David Libre';
+  src: url(/assets/fonts/david-libre-regular.woff2),
+    url(/assets/fonts/david-libre-regular.woff);
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  unicode-range: U+0590-05FF, U+FB1D-FB4F;
+}
+
 /* -------------------------------------------------------------------------- *
  * Sane Sizing and Appearance
  * -------------------------------------------------------------------------- */
@@ -336,6 +346,7 @@ iframe {
   --bild-fontstack: 'Bild', system-ui, sans-serif;
   --bluu-fontstack: 'Bluu Suuperstar', 'Times New Roman', serif;
   --dejavu-fontstack: DejaVu, Menlo, Consolas, monospace;
+  --hebrew-fontstack: 'David Libre', serif;
   --reforma-fontstack: 'Reforma 2018', var(--system-fontstack);
 
   /* Luckily, both Bely and Reforma support kerning, default ligatures, lining
@@ -1720,7 +1731,8 @@ hr.lively::after {
 
 /* Using italics for Adonai looks awkward. Besides, They surpass all emphasis. */
 i[lang=he] {
-  font-style: normal
+  font-family: var(--hebrew-fontstack);
+  font-style: normal;
 }
 
 /* -------------------------------------------------------------------------- *
