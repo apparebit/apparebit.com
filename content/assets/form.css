@@ -2096,6 +2096,12 @@ main .sidebar + p {
   margin-top: var(--s10);
 }
 
+@media print {
+  main .sidebar {
+    border: solid var(--color-fg) var(--t60);
+  }
+}
+
 /* -------------------------------------------------------------------------- *
  * .strike
  *
