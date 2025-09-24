@@ -203,6 +203,10 @@ Options -MultiViews
 
 </IfModule>
 
+<Files "*.schema.json">
+    ForceType application/schema+json
+</Files>
+
 # ----------------------------------------------------------------------
 # | Character encodings                                                |
 # ----------------------------------------------------------------------
