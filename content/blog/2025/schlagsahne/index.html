@@ -57,7 +57,7 @@
     "https://apparebit.com/blog/2025/schlagsahne/whipped-cream-1600x1534.webp",
     "https://apparebit.com/blog/2025/schlagsahne/whipped-cream-2000x1918.webp",
     "https://apparebit.com/blog/2025/schlagsahne/whipped-cream-2400x2302.webp",
-    "https://apparebit.com/blog/2025/schlagsahne/whipped-cream-3459x3318webpg"
+    "https://apparebit.com/blog/2025/schlagsahne/whipped-cream-3459x3318.webp"
   ],
   "datePublished": "2025-12-18T12:00:00-05:00",
   "author": {
@@ -142,16 +142,16 @@ main :is(header, section, .section, footer) {
 
 .cover .title h1 {
   text-transform: uppercase;
-  font-size: calc(var(--s10) + 3vh + 3vw);
-  font-stretch: 70%;
+  font-size: calc(var(--s10) + 2.5vh + 2.5vw);
+  font-stretch: 90%;
   line-height: var(--t05);
-  transform: rotate(-3deg);
+  transform: rotate(-2deg) skew(-2deg, -2deg);
   margin-top: 15vh;
   padding: calc(1rem / var(--r-major));
 }
 
 .cover .title .h2 {
-  margin: auto 2vmin 4vmin 2vmin;
+  margin: auto 2vmin 8vmin 2vmin;
   padding: 2vmin;
   font-size: var(--s10);
   font-stretch: 90%;
@@ -216,6 +216,18 @@ em::before, i::before {
     --color-bg-sunk: #000;
     --color-separator: var(--color-bg-lifted);
   }
+}
+
+/*
+ * Only if the device's primary input device supports hovering,
+ * hide navigation bar and title unless pointer is on document.
+ */
+@media (hover: hover) {
+  body .page-header {
+    transition: opacity 0.3s ease-out
+  }
+  body .page-header { opacity: 0; }
+  body:hover .page-header { opacity: 1; }
 }
 </style>
 </head>
