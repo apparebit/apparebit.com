@@ -2356,9 +2356,8 @@ footer.references {
     break-after: avoid;
   }
 
-  .cover .title {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
+  .cover {
+    print-color-adjust: exact;
   }
 
   figure {
